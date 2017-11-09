@@ -1,0 +1,30 @@
+html{*overflow:auto;}
+#container{position:relative;background:url(../../img/skin_/loginlight.png) no-repeat center center;background-color:#085265;}
+
+/*页面主体*/
+#bd{min-height:430px;}
+#main{ position:relative;width:400px; height:440px; margin:0 auto 0; background:rgba(0,0,0,0.5);min-height:443px;border-radius:5px;box-shadow:2px 4px 2px rgba(0,0,0,0.3);}
+
+/*logo*/
+.login-box #logo{position:absolute; left:30px; top:33px; width:68px; height:72px; background:url(../../img/skin_/loginlogo.png) no-repeat;}
+.login-box h1{position:absolute; left:120px; top:60px; width:250px; height:35px; background:url(../../img/skin_/loginname.png) no-repeat;}
+
+/*登陆框*/
+.login-box .input{position:absolute; left:59px; width:39px; height:39px;background-color:rgba(0,0,0,0.6);}
+.login-box .input label{height:37px; line-height:37px; font-size:14px;}
+.login-box .input input{position:absolute; left:39px; top:0; width:176px; height:39px; *line-height:39px;  padding:0; border:none; outline:none; }
+.login-box .username{ top:160px;background:url(../../img/skin_/user.png) no-repeat center center;background-color:rgba(0,0,0,0.6);}
+.login-box .username input{width:252px;height:39px;background:rgba(0,0,0,0.6);font-size:14px; color:#848784;}
+.login-box .psw{ top:220px;background:url(../../img/skin_/psw.png) no-repeat center center;background-color:rgba(0,0,0,0.6);}
+.login-box .psw input { width:252px;height:39px;background:rgba(0,0,0,0.6);color:#848784;}
+.login-box .validate{ position:relative; top:280px;}
+.login-box .validate input{width:252px;height:39px;background:rgba(0,0,0,0.6);color:#848784;/*padding:0 20px 0 20px; background:url(../../img/skin_/yzminput.png);*/font-size:14px;}
+.login-box .validate .value{ position:absolute; left:172px; width:120px;text-align:center;height:39px; line-height:39px; color:#000000;background:#FFFFFF;font-size:18px;}
+
+/*登录按钮*/
+#btn{ position:absolute; left:59px; top:352px;}
+#btn input{width:291px;height:38px;background:#4688ac; border:none; outline:none; cursor:pointer; font-size:16px; font-weight:bold;}
+#btn input:hover{background:rgba(248,136,38,1.00);}
+
+/*页脚*/
+#ft{position:absolute;bottom:40px;left:0;right:0;height:12px;width:100%; text-align:center; line-height:12px;color:#012E4B;}

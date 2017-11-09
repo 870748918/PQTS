@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="cn.com.gd.pojo.User" alias="User"/>
+        <typeAlias type="cn.com.gd.pojo.UserLog" alias="UserLog"/>
+        <typeAlias type="cn.com.gd.pojo.Department" alias="Department"/>
+        <typeAlias type="cn.com.gd.pojo.Device" alias="Device"/>
+        <typeAlias type="cn.com.gd.pojo.Node" alias="Node"/>
+        <typeAlias type="cn.com.gd.pojo.MonObjConf" alias="MonObjConf"/>
+        <typeAlias type="cn.com.gd.pojo.SysConf" alias="SysConf"/>
+        <typeAlias type="cn.com.gd.pojo.Approve" alias="Approve"/>
+        <typeAlias type="cn.com.gd.pojo.Role" alias="Role"/>
+        <typeAlias type="cn.com.gd.pojo.Permission" alias="Permission"/>
+        <typeAlias type="cn.com.gd.pojo.Noticed" alias="Noticed"/>
+        <typeAlias type="cn.com.gd.pojo.DataOperateExp" alias="DataOperateExp"/>
+        <typeAlias type="cn.com.gd.pojo.Conditions" alias="Conditions"/>
+        <typeAlias type="cn.com.gd.pojo.LogExp" alias="LogExp"/>
+        <typeAlias type="cn.com.gd.pojo.TransLog" alias="TransLog"/>
+        <typeAlias type="cn.com.gd.pojo.Resume" alias="Resume"/>
+    </typeAliases>
+    <plugins>
+        <plugin interceptor="cn.com.gd.pager.PagePlugin">
+            <property name="dialect" value="mysql"/>
+            <property name="pageSqlId" value=".*ListPage.*" />
+        </plugin>
+    </plugins>
+</configuration>
